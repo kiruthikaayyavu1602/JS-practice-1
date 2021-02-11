@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<title>Submit task</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="js/submit.js" defer="defer"></script>
+
+</head>
+<body>
+<div class="container">
+
+<form name="myForm">
+  <p>
+  First Name: <input type="text" id="fname" name="fname">
+  </p><br>
+  
+  <p>
+  Last Name: <input type="text" id="lname" name="lname">
+  </p><br>
+  
+  <p>
+    <label for="Branch">Department:</label>
+    <select id="Branch" name="Branch">
+    <option value="ECE">ECE</option>
+    <option value="EEE">EEE</option>
+    <option value="CSE">CSE</option>
+	</select>
+  </p><br>
+  
+ <p>
+ <div class="inlineblock">
+ Gender
+ </div>
+ <div class="inlineblock Align">
+ <input type="radio" id="male" name="gender" value="male" checked>
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  </div>
+  </p><br>
+  
+  <p>
+  Email: <input type="Email" id="email" name="email">
+  </p><br>
+  
+  <p>
+  Phone Number: <input type="Number" id="number" name="number">
+  </p><br>
+  
+   <p>
+     <label for="comment">Comment:</label>
+      <textarea class="form-control" rows="5" id="comment" style="width:40%;"></textarea>
+   </p><br>
+  
+ <button id="myAnchor" onclick="myFunction()">Submit</button>
+ 
+ </form>
+ 
+ </div>
+ </body>
+
+</html>
